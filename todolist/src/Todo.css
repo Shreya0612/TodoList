@@ -1,0 +1,40 @@
+.todo-input {
+  margin-top: 20px;
+}
+.todo-label {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #221ac6;
+  font-weight: bold;
+}
+.label-desc {
+  color: #221ac6;
+  margin-bottom: 5px;
+}
+.add-button {
+  margin-top: 5px;
+  color: #221ac6;
+}
+.list-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.button-div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.status {
+  font-size: 14px;
+  color: green;
+}
+.status-pending {
+  font-size: 14px;
+  color: red;
+}
+.list-box .MuiList-root {
+  max-width: 500px;
+}
