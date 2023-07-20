@@ -67,7 +67,14 @@ export default function TodoList() {
     seteditList(false);
     setTodoValue("");
   };
-  console.log("listlistlistlist", list);
+  const clearHandler = () => {
+    setList((prev) => {
+      return prev.filter((item) => {
+        return item.status !== "Completed";
+      });
+    });
+  };
+
   return (
     <>
       <div className='todo-input'>
@@ -94,6 +101,14 @@ export default function TodoList() {
               }
             }}>
             Add Descrition
+          </Button>
+          <Button
+            variant='contained'
+            size='small'
+            onClick={() => {
+              clearHandler();
+            }}>
+            Clear{" "}
           </Button>
         </div>
       </div>

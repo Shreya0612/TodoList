@@ -14,6 +14,10 @@
 .add-button {
   margin-top: 5px;
   color: #221ac6;
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .list-div {
   display: flex;
